@@ -53,7 +53,7 @@ func EnableConfigFile(cfg interface{}, filepath ...string) {
 		field := v.Field(i)
 		fieldType := t.Field(i)
 
-		configName := fieldType.Tag.Get("config")
+		configName := fieldType.Tag.Get("sias")
 		if configName == "" {
 			continue
 		}
